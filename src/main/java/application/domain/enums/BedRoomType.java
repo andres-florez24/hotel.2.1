@@ -1,7 +1,7 @@
 ﻿package application.domain.enums;
 
 public enum BedRoomType {
-    INDIVIDUAl,
+    INDIVIDUAL,
     DOUBLE,
     SUITE;
 

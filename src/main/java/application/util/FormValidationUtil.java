@@ -7,11 +7,11 @@ public class FormValidationUtil {
     private static final Scanner sc = new Scanner(System.in);
 
 
-    public static int readInt(String message) {
+    public static int readInt(String prompt) {
         int value;
 
         while (true) {
-            System.out.print(message);
+            System.out.print(prompt);
             try {
                 value = Integer.parseInt(sc.nextLine());
                 return value;
@@ -22,11 +22,11 @@ public class FormValidationUtil {
     }
 
 
-    public static double readDouble(String message) {
+    public static double readDouble(String prompt) {
         double value;
 
         while (true) {
-            System.out.print(message);
+            System.out.print(prompt);
             try {
                 value = Double.parseDouble(sc.nextLine());
                 return value;
@@ -37,11 +37,11 @@ public class FormValidationUtil {
     }
 
 
-    public static String readText(String message) {
+    public static String readText(String prompt) {
         String value;
 
         while (true) {
-            System.out.print(message);
+            System.out.print(prompt);
             value = sc.nextLine().trim();
 
             if (!value.isEmpty()) {
@@ -53,11 +53,11 @@ public class FormValidationUtil {
     }
 
 
-    public static String readEmail(String message) {
+    public static String readEmail(String prompt) {
         String email;
 
         while (true) {
-            System.out.print(message);
+            System.out.print(prompt);
             email = sc.nextLine().trim();
 
             if (email.contains("@") && email.contains(".")) {
@@ -69,11 +69,11 @@ public class FormValidationUtil {
     }
 
 
-    public static int readOption(String message, int min, int max) {
+    public static int readOption(String prompt, int min, int max) {
         int option;
 
         while (true) {
-            option = readInt(message);
+            option = readInt(prompt);
 
             if (option >= min && option <= max) {
                 return option;

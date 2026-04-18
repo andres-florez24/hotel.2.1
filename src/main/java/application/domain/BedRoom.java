@@ -4,7 +4,7 @@ import application.domain.enums.BedRoomStatus;
 import application.domain.enums.BedRoomType;
 
 public class BedRoom {
-    private int rooId;
+    private int roomId;
     private String room;
     private BedRoomType bedRoomType;
     private double price;
@@ -14,8 +14,8 @@ public class BedRoom {
 
     }
 
-    public BedRoom(int rooId, String room, BedRoomType bedRoomType, double price, BedRoomStatus bedRoomStatus) {
-        this.rooId = rooId;
+    public BedRoom(int roomId, String room, BedRoomType bedRoomType, double price, BedRoomStatus bedRoomStatus) {
+        this.roomId = roomId;
         this.room = room;
         this.bedRoomType = bedRoomType;
         this.price = price;
@@ -23,12 +23,12 @@ public class BedRoom {
     }
 
 
-    public int getRooId() {
-        return rooId;
+    public int getRoomId() {
+        return roomId;
     }
 
-    public void setRooId(int rooId) {
-        this.rooId = rooId;
+    public void setRoomId(int roomId) {
+        this.roomId = roomId;
     }
 
     public String getRoom() {
@@ -66,7 +66,7 @@ public class BedRoom {
     @Override
     public String toString() {
         return "BedRoom{" +
-                "rooId=" + rooId +
+                "rooId=" + roomId +
                 ", room='" + room + '\'' +
                 ", bedRoomType=" + bedRoomType +
                 ", price=" + price +
